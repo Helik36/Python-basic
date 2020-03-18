@@ -95,3 +95,4 @@ while True:
 		print(f'{day}-й день: {start:.2f}')
 		print(f'на {day}-й день, спортсмен пробежит - {int(start)} километров.')
 		break
+	
