@@ -79,10 +79,15 @@ for i in cycle(cycle_list):
 # Задание 7  ________________________________________________________________
 print("Задание 7")
 def fibo_gen():
+    x = 1
     factor = 1
-    for i in range(1, 16):
-        factor *= i
-        yield factor
+    for i in range(1, int(input("Число: ")) + 1):
+        if x > 15:
+            break
+        else:
+            factor *= i
+            yield factor
+            x += 1
 
 for el in fibo_gen():
     print(el)
